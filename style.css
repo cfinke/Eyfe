@@ -1,0 +1,243 @@
+/*
+Theme Name: Eyfe
+Theme URI: http://www.chrisfinke.com/wordpress/themes/eyfe/
+Author: Christopher Finke
+Author URI: http://www.chrisfinke.com/
+Description: An iPhoto-esque theme to show off your photos without manually creating posts for them.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: iphoto, photo, apple, photography
+*/
+
+@import url( 'reset.css' );
+
+body {
+	background: #333;
+}
+
+#masthead {
+	background: #e5e9ee;
+	border-right: 1px solid #424242;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #000;
+	float: left;
+	font-size: 14px;
+	height: 100%;
+	padding: 20px;
+	padding-bottom: 50px;
+	width: 250px;
+	min-height: 1000px;
+}
+
+#primary {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-right: 1px solid #1a191a;
+	color: #fff;
+	float: left;
+	overflow: auto;
+	padding: 0 0 50px 0;
+	padding-bottom: 50px;
+	width: calc( 100% - 250px - 300px );
+}
+
+#primary a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#primary article.type-attachment {
+	float: left;
+	font-size: 12px;
+	height: 220px;
+	text-align: center;
+	width: 200px;
+}
+
+#primary article.type-attachment a.photo {
+	background-color: #202020;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 160px auto;
+	border: 1px solid #1e1e1e;
+	border-radius: 12px;
+	box-shadow: 0 0 8px 2px #2b2b2b;
+	display: block;
+	height: 160px;
+	margin: 0 auto 5px auto;
+	text-decoration: none;
+	width: 160px;
+}
+
+body.attachment #primary article.type-attachment {
+	width: 100%;
+}
+
+#nav-below {
+	clear: both;
+}
+
+#secondary {
+	background-color: #404040;
+	border-left: 1px solid #4f4e4f;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #c8c8c8;
+	float: right;
+	font-size: 14px;
+	padding: 15px;
+	width: 300px;
+}
+
+#secondary h1, #secondary h2, #secondary h3, #secondary h4, #secondary h5, #secondary h6, #secondary h7 {
+	color: #fff;
+}
+
+#secondary a {
+	color: #c8c8c8;
+}
+
+#exif {
+	background-color: #edeee0;
+	background-image: linear-gradient( to bottom, #dedfcc, #edeee0, #e5e8cc, #eff1d8, #e4e7cb );
+	border: 1px solid #2f2e31;
+	border-radius: 4px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #343434 !important;
+	margin-bottom: 10px;
+	min-height: 90px;
+	padding: 5px;
+	width: 100%;
+}
+
+#exif p span {
+	font-variant: small-caps;
+	margin-right: 20px;
+}
+
+#exif span {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#exif .filetype {
+	background-color: #343434;
+	color: #edeee0;
+	text-transform: uppercase;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 0 3px;
+	position: relative;
+	top: -1px;
+	font-size: smaller;
+}
+
+#exif .camera-settings {
+	border-top: 1px solid #343434;
+	height: 20px;
+}
+
+.camera-settings span {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: inline-block;
+	border-right: 1px solid #343434;
+	max-width: 23%;
+	text-align: center;
+	width: 23%;
+	font-size: 12px;
+}
+
+.camera-settings span:last-child {
+	border-right: none;
+}
+
+#colophon {
+	background-image: linear-gradient( to bottom, #d4d4d4, #8b8b8b );
+	border-top: 1px solid #333;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+}
+
+#colophon #searchform {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+#colophon #searchform input[type=search] {
+	border: 1px solid #6b6b6b;
+	border-bottom-color: #929292;
+	border-radius: 20px;
+	font-size: 12px;
+	height: 14px;
+	padding: 3px 10px;
+}
+
+#colophon #searchform input[type=submit] {
+	display: none;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+/* Image Permalinks */
+#primary.image-attachment header {
+	border-bottom: 1px solid #202020;
+	background-image: linear-gradient( to bottom, #444, #343434 );
+	background-color: #3b3b3b;
+	height: 38px;
+}
+
+#primary.image-attachment header nav.navigation-image {
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 0;
+}
+
+#primary.image-attachment header nav.navigation-image div a {
+	border: 1px solid #0a0a0a;
+	border-radius: 3px 0 0 3px;
+	width: 25px;
+	height: 25px;
+	float: left;
+	color: transparent;
+	display: block;
+	background-image: linear-gradient( to bottom, #707070, #525252 5%, #3a3a3a );
+}
+
+#primary.image-attachment header nav.navigation-image div.next a {
+	border-radius: 0 3px 3px 0;
+	margin-left: -1px;
+}
+
+#primary header .button {
+	border: 1px solid #000;
+	border-radius: 3px;
+	background-image: linear-gradient( to bottom, #707070, #525252 5%, #3a3a3a );
+	color: #fff;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#primary header .back {
+	border-radius: 14px 0 0 14px;
+	padding-left: 17px;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+}
+
+/* Buttons */
+
