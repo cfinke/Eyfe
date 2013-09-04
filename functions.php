@@ -3,7 +3,7 @@
 function eyfe_pre_get_posts( &$query ) {
 	if ( is_home() && $query->is_main_query() ) {
 		// Images are first-class post citizens.
-		$query->set( 'post_type', array( 'xpost', 'attachment' ) );
+		$query->set( 'post_type', array( 'attachment' ) );
 		$query->set( 'post_status', array( 'inherit', 'publish' ) );
 		$query->set( 'posts_per_page', 30 );
 	}
